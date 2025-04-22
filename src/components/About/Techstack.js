@@ -1,68 +1,66 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { DiJavascript1, DiReact, DiNodejs, DiGit, DiPython } from "react-icons/di";
 import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { SiPostgresql, SiExpress, SiAxios } from "react-icons/si"; // Add Axios
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <div className="icon-container">
+          <DiNodejs />
+          <div className="tooltip">Node.js</div>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <div className="icon-container">
+          <DiReact />
+          <div className="tooltip">React.js</div>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <div className="icon-container">
+          <CgCPlusPlus />
+          <div className="tooltip">C++</div>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <div className="icon-container">
+          <DiJavascript1 />
+          <div className="tooltip">JavaScript</div>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <div className="icon-container">
+          <SiExpress />
+          <div className="tooltip">Express.js</div>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <div className="icon-container">
+          <DiGit />
+          <div className="tooltip">Git</div>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <div className="icon-container">
+          <DiPython />
+          <div className="tooltip">Python</div>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <div className="icon-container">
+          <SiPostgresql />
+          <div className="tooltip">PostgreSQL</div>
+        </div>
       </Col>
+      {/* Axios Icon */}
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <div className="icon-container">
+          <SiAxios />
+          <div className="tooltip">Axios</div>
+        </div>
       </Col>
     </Row>
   );

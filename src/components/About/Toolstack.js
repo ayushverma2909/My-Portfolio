@@ -1,30 +1,34 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
-} from "react-icons/si";
+import { SiGithub, SiVisualstudiocode, SiPostman, SiWindows } from "react-icons/si";
+import './toolstack.css'; // Import the CSS file for hover effects
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <div className="icon-container">
+          <SiWindows />
+          <span className="tooltip">Windows</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <div className="icon-container">
+          <SiVisualstudiocode />
+          <span className="tooltip">Visual Studio Code</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <div className="icon-container">
+          <SiPostman />
+          <span className="tooltip">Postman</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <div className="icon-container">
+          <SiGithub />
+          <span className="tooltip">GitHub</span>
+        </div>
       </Col>
     </Row>
   );

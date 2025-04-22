@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import MyntraClone from "../../Assets/Projects/MyntraClone.png";
+import weather from "../../Assets/Projects/weather.png";
+import currency from "../../Assets/Projects/currency.png";
+import familyTracker from "../../Assets/Projects/familyTracker.png";
 
 function Projects() {
   return (
@@ -23,69 +21,51 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={currency}
               isBlog={false}
               title="Cryto Price Tracker"
               description="A responsive web application built with Node.js, Express, EJS, and Axios that allows users to monitor live cryptocurrency prices and real-time foreign exchange rates. It fetches data from the CoinMarketCap and ExchangeRate APIs to deliver up-to-date price information. The app features a clean UI, real-time updates, and provides users with key financial insights at a glance."
-              ghLink="#"
-              demoLink="#"
+              ghLink="https://github.com/ayushverma2909/Crypto-FX-tracker.git"
+              // demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={familyTracker}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="#"
-              demoLink="#"
+              title="Family Travel Tracker"
+              description="A real-time location tracking web app designed to help families stay connected and safe. Built with modern web technologies, it allows users to view the live locations of family members on a map, ensuring peace of mind with easy access and a user-friendly interface."
+              ghLink="https://github.com/ayushverma2909/Family-Travel-tracker.git"
+              // demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={weather}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="#"
-              demoLink="#"              
+              title="Weathe App"
+              description="A simple and responsive web app that shows real-time weather information for any city using the OpenWeatherMap API. Built with HTML, CSS, JavaScript (or React, if you used it). Users can search by city name and get current temperature, humidity, weather conditions, and more."
+              ghLink="https://github.com/ayushverma2909/Weather-App.git"
+              // demoLink="#"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={MyntraClone}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="#"
-              demoLink="#"
+              title="Myntra Clone"
+              description="A responsive e-commerce website clone built with HTML, CSS, and JavaScript. It replicates Myntra's core features like product browsing, details view, and a shopping cart, with a mobile-friendly design."
+              ghLink="https://github.com/ayushverma2909/Myntra-Clone.git"
+              demoLink="https://ayushverma2909.github.io/Myntra-Clone/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="#"
-              
-            />
-          </Col>
+          
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="#"
-            />
-          </Col>
+          
         </Row>
       </Container>
     </Container>

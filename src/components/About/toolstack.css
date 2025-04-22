@@ -1,0 +1,42 @@
+.icon-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: max-content;
+    z-index: 10;
+  }
+  
+  .icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    position: relative; 
+  }
+  
+  .icon-container:hover .tooltip {
+    top: -15px; 
+  }
+  
