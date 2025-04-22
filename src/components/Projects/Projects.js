@@ -45,7 +45,7 @@ function Projects() {
             <ProjectCard
               imgPath={weather}
               isBlog={false}
-              title="Weathe App"
+              title="Weather App"
               description="A simple and responsive web app that shows real-time weather information for any city using the OpenWeatherMap API. Built with HTML, CSS, JavaScript (or React, if you used it). Users can search by city name and get current temperature, humidity, weather conditions, and more."
               ghLink="https://github.com/ayushverma2909/Weather-App.git"
               // demoLink="#"              
