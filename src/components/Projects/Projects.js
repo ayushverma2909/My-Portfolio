@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import MyntraClone from "../../Assets/Projects/MyntraClone.png";
+import rateItNow from "../../Assets/Projects/rateItNow.png"
 import weather from "../../Assets/Projects/weather.png";
 import currency from "../../Assets/Projects/currency.png";
 import familyTracker from "../../Assets/Projects/familyTracker.png";
@@ -38,6 +39,17 @@ function Projects() {
               description="A real-time location tracking web app designed to help families stay connected and safe. Built with modern web technologies, it allows users to view the live locations of family members on a map, ensuring peace of mind with easy access and a user-friendly interface."
               ghLink="https://github.com/ayushverma2909/Family-Travel-tracker.git"
               // demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={rateItNow}
+              isBlog={false}
+              title="Rate It Now App"
+              description="The Rate It Now App is an innovative Books Notes API crafted using Node.js, Express, and EJS, designed to let users seamlessly manage their book notes. With an intuitive interface and efficient backend, it offers real-time CRUD operations powered by PostgreSQL, providing a powerful, dynamic experience for book enthusiasts."
+              ghLink="https://github.com/ayushverma2909/Rate-It-Now-App.git"
+              // demoLink="#"              
             />
           </Col>
 
