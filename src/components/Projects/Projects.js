@@ -7,6 +7,7 @@ import rateItNow from "../../Assets/Projects/rateItNow.png"
 import weather from "../../Assets/Projects/weather.png";
 import currency from "../../Assets/Projects/currency.png";
 import familyTracker from "../../Assets/Projects/familyTracker.png";
+import Permalist from "../../Assets/Projects/Permalist.png";
 
 function Projects() {
   return (
@@ -75,7 +76,16 @@ function Projects() {
             />
           </Col>
 
-          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Permalist}
+              isBlog={false}
+              title="Permalist App"
+              description="Permalist is a web application designed to help users manage a personal list of items. With a simple and intuitive interface, users can easily add and delete items from their list. Built with Node.js, Express, and PostgreSQL, it offers a seamless experience for organizing and maintaining personal data securely."
+              ghLink="https://github.com/ayushverma2909/Permalist-App.git"
+              // demoLink="https://ayushverma2909.github.io/Myntra-Clone/"
+            />
+          </Col>
 
           
         </Row>
