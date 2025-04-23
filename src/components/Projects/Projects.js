@@ -37,7 +37,7 @@ function Projects() {
               imgPath={familyTracker}
               isBlog={false}
               title="Family Travel Tracker"
-              description="A real-time location tracking web app designed to help families stay connected and safe. Built with modern web technologies, it allows users to view the live locations of family members on a map, ensuring peace of mind with easy access and a user-friendly interface."
+              description="The app was created using Node.js, Express, and PostgreSQL to track users and the countries they’ve visited. It features dynamic EJS templates for rendering, input validation to avoid duplicate entries, and a user-friendly interface for logging and viewing travels. The database stores user profiles and visited countries, and the app was thoroughly tested to ensure smooth functionality."
               ghLink="https://github.com/ayushverma2909/Family-Travel-tracker.git"
               // demoLink="#"
             />
