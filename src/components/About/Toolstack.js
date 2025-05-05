@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { SiGithub, SiVisualstudiocode, SiPostman, SiWindows } from "react-icons/si";
-import './toolstack.css'; // Import the CSS file for hover effects
+import './toolstack.css';
 
 function Toolstack() {
   return (
