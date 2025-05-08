@@ -8,6 +8,7 @@ import weather from "../../Assets/Projects/weather.png";
 import currency from "../../Assets/Projects/currency.png";
 import familyTracker from "../../Assets/Projects/familyTracker.png";
 import Permalist from "../../Assets/Projects/Permalist.png";
+import PersonalNotes from "../../Assets/Projects/PersonalNotes.png"
 
 function Projects() {
   return (
@@ -21,6 +22,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PersonalNotes}
+              isBlog={false}
+              title="Personal Notes"
+              description="Taking notes has never been this fun! myNote is a personal note-keeping app where users can log in, create, view, and manage their own posts. Built with completely expressJs, EJS, and Node.js while Data is stored in Supabase — it’s a full-stack playground for storing thoughts, ideas, or anything you want to remember!"
+              ghLink="https://github.com/ayushverma2909/Personal-Notes.git"
+              demoLink="https://personal-notes-xi.vercel.app/"
+            />
+          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={currency}
