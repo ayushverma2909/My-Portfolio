@@ -9,6 +9,7 @@ import currency from "../../Assets/Projects/currency.png";
 import familyTracker from "../../Assets/Projects/familyTracker.png";
 import Permalist from "../../Assets/Projects/Permalist.png";
 import PersonalNotes from "../../Assets/Projects/PersonalNotes.png"
+import BlogApp from "../../Assets/Projects/BlogApp.png"
 
 function Projects() {
   return (
@@ -22,6 +23,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={BlogApp}
+            isBlog={false}
+            title="Blog App"
+            description="A full-stack blog application built with React, Node.js, Express, and Supabase Postgres. It features secure login, real-time CRUD operations, and an auto-save draft system to prevent content loss — offering a smooth and reliable writing experience."
+            ghLink="https://github.com/ayushverma2909/Blog-App"
+            demoLink="https://ayushverma2909.github.io/Blog-App/"
+          />
+        </Col>
 
         <Col md={4} className="project-card">
             <ProjectCard
