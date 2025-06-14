@@ -11,16 +11,16 @@ function Footer() {
       </div>
 
       <div className="footer-right">
-        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+        <a href="https://instagram.com/ayush.1.9" target="_blank" rel="noreferrer">
           <FaInstagram />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noreferrer">
           <FaTwitter />
         </a>
-        <a href="https://github.com" target="_blank" rel="noreferrer">
+        <a href="https://github.com/ayushverma2909" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/ayush-verma-2b3a48341/" target="_blank" rel="noreferrer">
           <FaLinkedin />
         </a>
       </div>

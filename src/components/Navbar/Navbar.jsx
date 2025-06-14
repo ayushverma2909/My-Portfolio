@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import myFace from "../../assets/favicon32.png";
 
 export default function Navbar() {
   const [active, setActive] = useState("home");
@@ -20,7 +21,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link to="/" onClick={() => setActive("home")}>
             <img
-              src="/myface.png"
+              src={myFace}
               alt="My Face"
               className="w-10 h-10 rounded-full border-2 border-white hover:scale-110 duration-300"
             />

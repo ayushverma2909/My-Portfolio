@@ -1,7 +1,7 @@
 import Particle from "../Particles";
 import { Mail, Github, Linkedin, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-// import ayushImg from "../../assets/ayush.jpg"; // make sure this path is correct
+import myFace from "../../assets/favicon512.png";
 
 const Home = () => {
   return (
@@ -27,17 +27,17 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="#projects"
+              href="/projects"
               className="bg-purple-600 px-6 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-purple-700 transition"
             >
               View Projects <ArrowRight size={18} />
             </a>
-            <a
+            {/* <a
               href="#contact"
               className="border border-purple-400 px-6 py-3 rounded-xl text-purple-300 hover:bg-purple-500 hover:text-white transition"
             >
               Get in Touch
-            </a>
+            </a> */}
           </div>
 
           <div className="mt-8 flex justify-center md:justify-start space-x-6">
@@ -49,7 +49,7 @@ const Home = () => {
               <Github className="hover:text-purple-400" />
             </a>
             <a
-              href="https://linkedin.com/in/yourlinkedin"
+              href="https://www.linkedin.com/in/ayush-verma-2b3a48341/"
               target="_blank"
               rel="noreferrer"
             >
@@ -68,7 +68,7 @@ const Home = () => {
           className="mt-10 md:mt-0"
         >
           <img
-            src=""
+            src={myFace}
             alt="Ayush"
             className="w-60 h-60 md:w-80 md:h-80 rounded-full object-cover border-4 border-purple-500 shadow-xl"
           /> 
