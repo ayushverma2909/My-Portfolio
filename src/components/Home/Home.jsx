@@ -2,6 +2,7 @@ import Particle from "../Particles";
 import { Mail, Github, Linkedin, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import myFace from "../../assets/favicon512.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -26,12 +27,12 @@ const Home = () => {
             beautiful UI/UX, and scalable backend systems.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a
-              href="/projects"
+            <Link
+              to="/projects"
               className="bg-purple-600 px-6 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-purple-700 transition"
             >
               View Projects <ArrowRight size={18} />
-            </a>
+            </Link>
             {/* <a
               href="#contact"
               className="border border-purple-400 px-6 py-3 rounded-xl text-purple-300 hover:bg-purple-500 hover:text-white transition"
